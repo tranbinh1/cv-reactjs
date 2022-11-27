@@ -1,13 +1,16 @@
 import React from 'react';
-import './boostrap.css';
-import './topbar.css';
+import './assets/boostrap.css';
+import './assets/topbar.css';
 import './App.css';
-import Header from './components/header/Header'
+import Header from './components/Header';
+import About from './components/About';
+import ProgressBar from './components/ProgressBar';
 
 function App() {
   return (
     <>
       <Header />
+      <About ProgressBar={ProgressBar}/>
     </>
   );
 }
