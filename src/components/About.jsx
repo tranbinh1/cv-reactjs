@@ -94,60 +94,6 @@ const About = () => {
                 </div>
             </div>
         </div>
-        <div className="container pt-5">
-            <div className="row">
-                <div className="col-md-6 wow fadeInRight">
-                <h2 className="fw-normal">Education</h2>
-                <ul className="timeline mt-4 pr-md-5">
-                    <li>
-                    <div className="title">2010 - 2013</div>
-                    <div className="details">
-                        <h5>Xuan Dieu High School</h5>
-                        <small className="fg-theme">Student</small>
-                        <p>Proud to be a student of Xuan Dieu High School</p>
-                    </div>
-                    </li>
-                    <li>
-                    <div className="title">2013 - 2016</div>
-                    <div className="details">
-                        <h5>Thu Duc College of Technology</h5>
-                        <small className="fg-theme">Specialization: Information Technology</small>
-                        <p>Proud to be a student of Thu Duc College of Technology, during my studies, I also tried to get a scholarship from the school.</p>
-                    </div>
-                    </li>
-                </ul>
-                </div>
-                <div className="col-md-6 wow fadeInRight" data-wow-delay="200ms">
-                <h2 className="fw-normal">Experience</h2>
-                <ul className="timeline mt-4 pr-md-5">
-                    <li>
-                    <div className="title">2016(4 months)</div>
-                    <div className="details">
-                        <h5>Cong Ty Giai Phap CNTT Viet Nam</h5>
-                        <small className="fg-theme">Intership</small>
-                        <p>The working environment is quite sociable, the colleagues are funny.</p>
-                    </div>
-                    </li>
-                    <li>
-                    <div className="title">2016 - 2018</div>
-                    <div className="details">
-                        <h5>Cong Ty Giai Phap Truc Tuyen ESC</h5>
-                        <small className="fg-theme">Developer Wordpress</small>
-                        <p>The working environment is sociable, everyone in the company helps each other.</p>
-                    </div>
-                    </li>
-                    <li>
-                    <div className="title">2018 - Current</div>
-                    <div className="details">
-                        <h5>Cong Ty THNH Phan Mem Halosoft</h5>
-                        <small className="fg-theme">Developer Shopify/Bigcommerce</small>
-                        <p>I have been assigned by the company to do the core products of the company, I am very happy for that. Every effort and effort pays off.</p>
-                    </div>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </div>
     </div>
   )
 }
