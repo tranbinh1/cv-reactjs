@@ -9,3 +9,11 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+.link {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}

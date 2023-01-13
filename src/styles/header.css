@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 50px;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-list-item {
+    position: relative;
+}
+
+.menu-list-item a {
+    padding: 20px 25px;
+    color: #00163a;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}   
+
+.header-icon-wrapper,
+.menu-burger {
+    cursor: pointer
+}
+
+.header-icon-wrapper .icon {
+    font-size: 18px;
+    color: #00163a;
+}
+
+.menu-burger {
+    width: 21px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-burger .line {
+    height: 3px;
+    width: 21px;
+    background: #00163a;
+    border-radius: 5px;
+    display: block;
+}
+    
+.menu-burger .line-1 {
+    --rotate-deg: 135deg;
+    --translate-y: -10px;
+
+}
+
+.menu-burger .line-3 {
+    --rotate-deg: -135deg;
+    --translate-y: 10px;
+
+}
+
+.menu-burger.open .line-2 {
+    opacity: 0; 
+}
+
+.menu-burger.open .line-1,
+.menu-burger.open .line-3 {
+    transform: rotate(var(--rotate-deg)) translateY(var(--translate-y));
+}

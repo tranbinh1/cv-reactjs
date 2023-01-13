@@ -1,0 +1,23 @@
+.label {
+    width: max-content;
+    line-height: 1em;
+    padding: 2px 5px;
+    font-size: 11px;
+    border-radius: 3px;
+    font-weight: 400;
+
+    position: absolute;
+    top: -50%;
+    right: 0;
+}
+
+.label::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--background-color);
+}
