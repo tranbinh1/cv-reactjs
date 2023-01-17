@@ -6,7 +6,7 @@ const MenuBurger = () => {
     const toggleOpenBurger = () => {
         setOpen(prevOpen => !prevOpen);
     }
-
+    
     return (
         <div className={`menu-burger ${open ? "open" : ""}`} onClick={toggleOpenBurger}>
             <span className="line line-1"/>

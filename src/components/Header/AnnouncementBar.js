@@ -9,5 +9,5 @@ const AnnouncementBar = () => {
     </section>
   )
 }
-
+  
 export default AnnouncementBar

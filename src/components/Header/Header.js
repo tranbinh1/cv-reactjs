@@ -5,6 +5,7 @@ import MenuListItem from './MenuListItem'
 import { faHeart, faMagnifyingGlass, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'
 import MenuBurger from './MenuBurger'
 import HeaderIconWrapper from './HeaderIconWrapper'
+import Container from '../Container'
 
 const menuLinkList = [
   {
@@ -41,25 +42,27 @@ const menuLinkList = [
 
 const Header = () => {
   return (
-    <section className="header">
-      <div className="logo-wrapper">
-        <img src={Logo} alt="Logo" />
-      </div>
-      <nav className="header-nav">
-        <ul className="menu-list">
-          {menuLinkList.map((listItem, index) => (
-            <MenuListItem key={`menu-list-item-${index}`} text={listItem.text} url={listItem.url} labelType={listItem.labelType} />
-          ))}
-        </ul> 
-      </nav>
-      <div className="header-actions">
-          <HeaderIconWrapper icon={faMagnifyingGlass} />
-          <HeaderIconWrapper icon={faUser} labelType="hot" />
-          <HeaderIconWrapper icon={faHeart} />
-          <HeaderIconWrapper icon={faShoppingCart} />
-          <MenuBurger />  
-      </div>
-    </section>  
+    <Container>
+      <header className="header">
+          <div className="logo-wrapper">
+            <img src={Logo} alt="Logo" />
+          </div>
+          <nav className="header-nav">
+            <ul className="menu-list">
+              {menuLinkList.map((listItem, index) => (
+                <MenuListItem key={`menu-list-item-${index}`} text={listItem.text} url={listItem.url} labelType={listItem.labelType} />
+              ))}
+            </ul> 
+          </nav>
+          <div className="header-actions">
+              <HeaderIconWrapper icon={faMagnifyingGlass} />
+              <HeaderIconWrapper icon={faUser} labelType="hot" />
+              <HeaderIconWrapper icon={faHeart} />
+              <HeaderIconWrapper icon={faShoppingCart} />
+              <MenuBurger />  
+          </div>
+      </header>
+    </Container>
   )
 }
 

@@ -2,8 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 10px 50px;
 }
 
 .menu-list {
@@ -69,7 +67,7 @@
     --translate-y: 10px;
 
 }
-
+/* 
 .menu-burger.open .line-2 {
     opacity: 0; 
 }
@@ -77,4 +75,4 @@
 .menu-burger.open .line-1,
 .menu-burger.open .line-3 {
     transform: rotate(var(--rotate-deg)) translateY(var(--translate-y));
-}
+} */
